@@ -36,7 +36,7 @@ function donation(btn_donation_id,donation_input_id,total_donation,my_balance,ti
            alert("You don't have enough money")
         }
 
-        else if(!isNaN(donationValue) && donationValue !== '' && donationValue > 0){
+        else if(!isNaN(donationValue) && donationValue !== '' && donationValue > 0 && donationValue < myCurrentBalance){
             const addedDonation = (totalDonation) + (donationValue)
             document.getElementById(total_donation).innerText = addedDonation
             
