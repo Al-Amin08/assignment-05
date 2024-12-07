@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="https://img.icons8.com/cotton/100/donate--v1.png" type="image/x-icon">
+
+    <style>
+        .glass-effect {
+          background: rgba(255, 255, 255, 0.3);
+          backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+    <body>
+        <nav class="sticky top-0 left-0 w-full glass-effect shadow-md p-4 z-50">
+           <div class="container mx-auto my-2">
+                <div class="navbar flex-col lg:flex-row justify-between">
+                    <div class="  px-3">
+                        <a id="home" class="btn w-28">Home</a>
+                    </div>
+                    <div class="">
+                        <img width="40" height="40" src="https://img.icons8.com/cotton/100/donate--v1.png" alt="donate--v1"/>
+                        <h3 class="font-semibold text-xl">Donate Bangladesh</h3>
+                        
+                    </div>
+                    <div class=" space-x-1">
+                        <img width="40" height="40" src="icons8-coin.gif" alt="">
+                    <span class="text-xl font-medium ">5000</span>
+                    <span class="text-xl font-medium ">BDT</span>
+                    </div>
+                    
+                    
+                </div>
+           </div>
+        </nav>
+        <section class="container mx-auto my-20 space-y-5 ">
+            <div class="collapse collapse-arrow border">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web. </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                <p>Selecting elements from the DOM in JavaScript is versatile and easy. Here are the most common methods:
+                    1.Selects an element by its unique id with getElementById
+                    2.With getElementsByClassName, selects all elements with a specific class. Returns an HTMLCollection.
+                    3.getElementsByTagName, selects all elements with a specific tag name. Returns an HTMLCollection.
+                    4.With querySelectorAll
+                    5.querySelector
+                </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                <p> Event delegation in the DOM is a design pattern that attaches a single event listener to a parent element, instead of attaching multiple listeners to individual child elements. It's useful because it improves performance, simplifies event handling, and supports dynamic elements</p>
+                </div>
+            </div>
+    
+            <div class="collapse collapse-arrow border">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                <p>In order to change or modify an element in the DOM, you need to select that specific element. Thus, JavaScript has six methods to select an element from a document.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <script>
+            document.getElementById('home').addEventListener('click',function(){
+                window.location.href = '/index.html'
+            })
+        </script>
+    </body>
+</html>

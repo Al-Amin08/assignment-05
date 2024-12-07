@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Navbar with Glass Effect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <!-- Fixed Navbar with Glass Effect -->
+  <nav class="fixed top-0 left-0 w-full glass-effect shadow-md p-4 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-xl font-bold">My Website</div>
+      <div class="space-x-4">
+        <a href="#" class="text-gray-700 hover:text-gray-900">Home</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">About</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Services</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="mt-20 p-4">
+    <h1 class="text-3xl font-bold mb-4">Welcome to My Website</h1>
+    <p class="text-gray-700">Scroll to see the fixed navbar effect.</p>
+    <!-- Add more content to enable scrolling -->
+    <div class="mt-8">
+      <!-- Sample content to enable scrolling -->
+      <div class="h-screen bg-gray-200 p-8 mb-8">Content Block 1</div>
+      <div class="h-screen bg-gray-300 p-8 mb-8">Content Block 2</div>
+      <div class="h-screen bg-gray-400 p-8 mb-8">Content Block 3</div>
+    </div>
+  </main>
+</body>
+</html>
